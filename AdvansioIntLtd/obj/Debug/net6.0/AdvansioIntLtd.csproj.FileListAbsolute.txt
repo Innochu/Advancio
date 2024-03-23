@@ -63,3 +63,4 @@ C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\refin
 C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.pdb
 C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.genruntimeconfig.cache
 C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\ref\AdvansioIntLtd.dll
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

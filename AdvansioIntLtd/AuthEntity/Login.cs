@@ -6,7 +6,7 @@ namespace AdvansioIntLtd.AuthEntity
     {
         [Required(ErrorMessage = "Enter Username/Email")]
         public string Email { get; set; } = string.Empty;
-        [Required(ErrorMessage = "Enter Password")]
+        [Required(ErrorMessage = "Enter Password")] 
         public string Password { get; set; } = string.Empty;
 
     }

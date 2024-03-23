@@ -1,6 +1,7 @@
 ﻿
 
 using AdvansioIntLtd.DbContextFolder;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,6 +14,8 @@ namespace AdvansioIntLtd.Extentions
         {
             services.AddDbContext<AdvansioDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("AdvansioConnection")));
+
+            services.AddScoped<RoleManager<IdentityRole>>();
         }
     }
 }
