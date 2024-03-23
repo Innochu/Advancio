@@ -795,6 +795,26 @@
             "rid": "win"
           }
         }
+      },
+      "AdvansioIntLtd/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AdvansioIntLtd.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AdvansioIntLtd.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2033,10 +2053,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AdvansioIntLtd/1.0.0": {
+      "type": "project",
+      "path": "../AdvansioIntLtd/AdvansioIntLtd.csproj",
+      "msbuildProject": "../AdvansioIntLtd/AdvansioIntLtd.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AdvansioIntLtd >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
@@ -2051,11 +2077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\AdvansioIntLtd.csproj",
-      "projectName": "AdvansioIntLtd",
-      "projectPath": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\AdvansioIntLtd.csproj",
+      "projectUniqueName": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdcancioIntLtd.Persistence\\AdvansioIntLtd.Persistence.csproj",
+      "projectName": "AdvansioIntLtd.Persistence",
+      "projectPath": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdcancioIntLtd.Persistence\\AdvansioIntLtd.Persistence.csproj",
       "packagesPath": "C:\\Users\\Decagon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\obj\\",
+      "outputPath": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdcancioIntLtd.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Decagon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2071,7 +2097,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\AdvansioIntLtd.csproj": {
+              "projectPath": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\AdvansioIntLtd.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2123,9 +2153,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

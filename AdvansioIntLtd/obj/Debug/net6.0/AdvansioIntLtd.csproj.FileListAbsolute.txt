@@ -1,0 +1,8 @@
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.csproj.AssemblyReference.cache
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.AssemblyInfoInputs.cache
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.AssemblyInfo.cs
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.csproj.CoreCompileInputs.cache
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.RazorAssemblyInfo.cache
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\obj\Debug\net6.0\AdvansioIntLtd.RazorAssemblyInfo.cs

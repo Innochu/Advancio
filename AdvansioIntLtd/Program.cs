@@ -1,5 +1,14 @@
+using AdvansioIntLtd.Extentions;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+var configuration = builder.Configuration;
+builder.Services.AddRazorPages();
+builder.Services.AddDependencies(configuration);
 // Add services to the container.
 builder.Services.AddRazorPages();
 

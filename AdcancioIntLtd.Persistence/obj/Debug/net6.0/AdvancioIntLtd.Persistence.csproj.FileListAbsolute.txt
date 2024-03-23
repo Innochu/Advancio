@@ -1,0 +1,5 @@
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdcancioIntLtd.Persistence\obj\Debug\net6.0\AdvancioIntLtd.Persistence.csproj.AssemblyReference.cache
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdcancioIntLtd.Persistence\obj\Debug\net6.0\AdvancioIntLtd.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdcancioIntLtd.Persistence\obj\Debug\net6.0\AdvancioIntLtd.Persistence.AssemblyInfoInputs.cache
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdcancioIntLtd.Persistence\obj\Debug\net6.0\AdvancioIntLtd.Persistence.AssemblyInfo.cs
+C:\Users\Decagon\OneDrive\Desktop\Advancio\AdcancioIntLtd.Persistence\obj\Debug\net6.0\AdvancioIntLtd.Persistence.csproj.CoreCompileInputs.cache
