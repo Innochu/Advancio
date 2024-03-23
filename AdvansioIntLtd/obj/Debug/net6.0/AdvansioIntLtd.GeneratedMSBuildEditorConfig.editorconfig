@@ -16,12 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/DashboardPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkUGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/FundTransferPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZFRyYW5zZmVyUGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/LoginPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/Privacy.cshtml]
