@@ -1,6 +1,8 @@
 ﻿
 
 using AdvansioIntLtd.DbContextFolder;
+using AdvansioIntLtd.Interface.IService;
+using AdvansioIntLtd.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +18,7 @@ namespace AdvansioIntLtd.Extentions
             options.UseSqlServer(configuration.GetConnectionString("AdvansioConnection")));
 
             services.AddScoped<RoleManager<IdentityRole>>();
+            services.AddScoped<IWalletService, WalletService>();
         }
     }
 }

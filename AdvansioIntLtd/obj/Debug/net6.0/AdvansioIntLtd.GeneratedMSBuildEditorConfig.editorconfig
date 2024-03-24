@@ -12,32 +12,32 @@ build_property.RootNamespace = AdvansioIntLtd
 build_property.ProjectDir = C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Decagon\OneDrive\Desktop\Advancio\AdvansioIntLtd
 build_property._RazorSourceGeneratorDebug = 
-
-[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/DashboardPage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkUGFnZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/FundTransferPage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZFRyYW5zZmVyUGFnZVxJbmRleC5jc2h0bWw=
+[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/FundsTransferPage/FtTransfer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZHNUcmFuc2ZlclBhZ2VcRnRUcmFuc2Zlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/LoginPage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlXEluZGV4LmNzaHRtbA==
+[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/LoginPage/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/RegisterPage/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJQYWdlXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Decagon/OneDrive/Desktop/Advancio/AdvansioIntLtd/Pages/Shared/_ValidationScriptsPartial.cshtml]
