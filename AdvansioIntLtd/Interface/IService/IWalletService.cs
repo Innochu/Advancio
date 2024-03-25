@@ -1,5 +1,7 @@
 ﻿using AdvansioIntLtd.Dto;
+using AdvansioIntLtd.Entities;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace AdvansioIntLtd.Interface.IService
 {
@@ -7,6 +9,7 @@ namespace AdvansioIntLtd.Interface.IService
     {
         Task<WalletDto> CreateWallet(WalletDto walletDto);
         Task<decimal> GetWalletBalanceAsync();
-        Task<TransferResultDto> TransferFundsAsync(TransferDto transferDto);
+        Task<Decimal> TransferFundsAsync(TransferDto transferDto);
+        Task<Wallet> GetWalletByNumber(string phone);
     }
 }

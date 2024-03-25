@@ -11,9 +11,10 @@
             <div class="card">
                 <div class="card-header bg-danger text-white">Login</div>
                 <div class="card-body">
-                    <form method="post">
+                    <form id="login" method="post">
+                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
+                            <label class="form-label">Email:</label>
                             <input type="email" id="email" name="email" class="form-control" asp-for="Login.Email" required />
                             <span class="text-danger" asp-validation-for="Login.Email"></span>
                         </div>

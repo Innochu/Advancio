@@ -12,11 +12,13 @@ namespace AdvansioIntLtd.Pages.RegisterPage
     public class RegisterModel : PageModel
     {
         private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
         private readonly IWalletService _walletService; // Assuming you have a service for managing wallets
 
-        public RegisterModel(UserManager<User> userManager, IWalletService walletService)
+        public RegisterModel(UserManager<User> userManager, SignInManager<User> signInManager, IWalletService walletService)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
             _walletService = walletService;
         }
 
@@ -30,37 +32,39 @@ namespace AdvansioIntLtd.Pages.RegisterPage
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return Page();
-            }
 
-            var user = new User
-            {
-                FirstName = Register.FirstName,
-                LastName = Register.LastName,
-                PhoneNumber = Register.PhoneNumber,
-                Email = Register.Email,
-            };
 
-            var result = await _userManager.CreateAsync(user, Register.Password);
-            if (result.Succeeded)
-            {
-                var walletDto = new WalletDto
+                var user = new User
                 {
+                    FirstName = Register.FirstName,
+                    LastName = Register.LastName,
                     PhoneNumber = Register.PhoneNumber,
-                    UserId = user.Id, 
-                    Balance = 5000 
+                    Email = Register.Email,
                 };
 
-                // Registration succeeded, create a wallet for the user and fund it
-                await _walletService.CreateWallet(walletDto); 
-                return RedirectToPage("/Index");
-            }
+                var result = await _userManager.CreateAsync(user, Register.Password);
+                if (result.Succeeded)
+                {
+                    var walletDto = new WalletDto
+                    {
+                        PhoneNumber = Register.PhoneNumber,
+                        UserId = user.Id,
+                        Balance = 5000
+                    };
 
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError(string.Empty, error.Description);
+                   
+                    await _walletService.CreateWallet(walletDto);
+
+                  await  _signInManager.SignInAsync(user, false);
+                    return RedirectToPage("/Index");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
             }
             return Page();
         }

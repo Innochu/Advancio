@@ -20,8 +20,13 @@ namespace AdvansioIntLtd.AuthEntity
         public string PhoneNumber { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Password address is required.")]
+        [DataType(DataType.Password)]
 
         public string Password { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        [Compare(nameof(Password), ErrorMessage = "Password and confirm password do not match")]
         public string ConfirmPassword { get; set; }
        
         public Gender Gender { get; set; }

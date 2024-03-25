@@ -2,7 +2,7 @@
 @model AdvansioIntLtd.Pages.RegisterPage.RegisterModel
 @{
     ViewData["Title"] = "Register";
-    Layout = "~/Pages/Shared/_Layout.cshtml"; 
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <div class="container mt-5">
@@ -12,55 +12,52 @@
                 <div class="card-header bg-danger text-white">Register</div>
                 <div class="card-body">
                     <form method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
                         <div class="mb-3">
-                            <label for="lastname" class="form-label">LastName:</label>
-                            <input type="lastname" id="lastname" name="lastname" class="form-control" asp-for="Register.LastName" required />
+                            <label asp-for="Register.LastName" class="form-label">LastName:</label>
+                            <input class="form-control" asp-for="Register.LastName" required />
                             <span class="text-danger" asp-validation-for="Register.LastName"></span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="firstname" class="form-label">FirstName:</label>
-                            <input type="firstname" id="firstname" name="username" class="form-control" asp-for="Register.FirstName" required />
+                            <label asp-for="Register.FirstName" class="form-label">FirstName:</label>
+                            <input class="form-control" asp-for="Register.FirstName" required />
                             <span class="text-danger" asp-validation-for="Register.FirstName"></span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" id="email" name="email" class="form-control" asp-for="Register.Email" required />
+                            <label asp-for="Register.Email" class="form-label">Email:</label>
+                            <input class="form-control" asp-for="Register.Email" required />
                             <span class="text-danger" asp-validation-for="Register.Email"></span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="phonenumber" class="form-label">PhoneNumber:</label>
-                            <input type="phonenumber" id="phonenumber" name="phonenumber" class="form-control" asp-for="Register.PhoneNumber" required />
+                            <label asp-for="Register.PhoneNumber" class="form-label">PhoneNumber:</label>
+                            <input class="form-control" asp-for="Register.PhoneNumber" required />
                             <span class="text-danger" asp-validation-for="Register.PhoneNumber"></span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password:</label>
-                            <input type="password" id="password" name="password" class="form-control" asp-for="Register.Password" required />
+                            <label asp-for="Register.Password" class="form-label">Password:</label>
+                            <input type="password" class="form-control" asp-for="Register.Password" required />
                             <span class="text-danger" asp-validation-for="Register.Password"></span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="confirmpassword" class="form-label">ConfirmPassword:</label>
-                            <input type="confirmpassword" id="confirmpassword" name="confirmpassword" class="form-control" asp-for="Register.ConfirmPassword" required />
+                            <label asp-for="Register.ConfirmPassword" class="form-label">Confirm Password:</label>
+                            <input type="password" class="form-control" asp-for="Register.ConfirmPassword" required />
                             <span class="text-danger" asp-validation-for="Register.ConfirmPassword"></span>
                         </div>
 
-
                         <div class="mb-3">
-                            <label for="gender" class="form-label">Gender:</label>
-                            <select id="gender" name="gender" class="form-control" asp-for="Register.Gender" required>
+                            <label asp-for="Register.Gender" class="form-label">Gender:</label>
+                            <select class="form-control" asp-for="Register.Gender" required>
                                 <option value="">Select Gender</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                             </select>
                             <span class="text-danger" asp-validation-for="Register.Gender"></span>
                         </div>
-
-
-                        <!-- Add more registration fields as needed -->
 
                         <button type="submit" class="btn btn-danger">Register</button>
                     </form>

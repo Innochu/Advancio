@@ -15,5 +15,9 @@ namespace AdvansioIntLtd.DbContextFolder
         public DbSet<UserTransaction> UserTransactions { get; set; }
         public DbSet<Wallet> Wallets { get; set; }
         public DbSet<WalletFunding> WalletFundings { get; set; }
+
+       
+      
+
     }
 }
