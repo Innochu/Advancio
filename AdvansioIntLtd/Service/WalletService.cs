@@ -60,48 +60,7 @@ namespace AdvansioIntLtd.Service
         }
 
 
-        public async Task<decimal> TransferFundsAsync(TransferDto transferDto)
-        {
-            try
-            {
-                // 1. Retrieve Wallet
-                var wallet = await GetWalletByNumber(transferDto.WalletNumber);
-                
-                // 2. Check Balance
-                if (wallet.Balance < transferDto.DebitAmount)
-                {
-                    throw new Exception("insufficient balance");
-                }
-
-                // 3. Perform Debit
-                decimal newBalance = wallet.Balance - transferDto.DebitAmount;
-                wallet.Balance = newBalance;
-                _dbContext.Wallets.Update(wallet);
-                await _dbContext.SaveChangesAsync();
-
-                return newBalance;
-              
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public async Task<Wallet> GetWalletByNumber(string phone)
-        {
-            var wallets = await _dbContext.Wallets.FirstOrDefaultAsync(w => w.PhoneNumber == phone);
-
-            if (wallets == null)
-            {
-                throw new Exception("Wallet with this number not found");
-            }
-
-            // Assuming you want to use the details of the first wallet if multiple wallets are found
-         
-            return wallets;
-        }
-
+      
 
     }
 }

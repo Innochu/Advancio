@@ -19,6 +19,7 @@ namespace AdvansioIntLtd.Extentions
 
             services.AddScoped<RoleManager<IdentityRole>>();
             services.AddScoped<IWalletService, WalletService>();
+            services.AddScoped<ITransferService, TransferService>();
         }
     }
 }
