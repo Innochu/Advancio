@@ -4,10 +4,10 @@ namespace AdvansioIntLtd.Dto
 {
     public class WalletDto
     {
-        public string PhoneNumber { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } 
 
         [ForeignKey("AppUserId")]
-        public string UserId { get; set; } = string.Empty;
-        public decimal Balance { get; set; } = 5000;
+        public string UserId { get; set; } 
+        public decimal Balance { get; set; } 
     }
 }

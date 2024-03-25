@@ -28,7 +28,7 @@ namespace AdvansioIntLtd.Service
                 {
                     PhoneNumber = walletDto.PhoneNumber,
                     UserId = walletDto.UserId,
-                    Balance = walletDto.Balance,
+                   
                 };
                 wall.SetWalletID(walletDto.PhoneNumber);
                 wall.Currency = Currency.Naira;
