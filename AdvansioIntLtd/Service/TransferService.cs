@@ -42,9 +42,9 @@ namespace AdvansioIntLtd.Service
             }
         }
 
-        public async Task<Wallet> GetWalletByNumber(string phone)
+        public async Task<Wallet> GetWalletByNumber(string phoneNumber)
         {
-            var wallets = await _dbContext.Wallets.FirstOrDefaultAsync(w => w.PhoneNumber == phone);
+            var wallets = await _dbContext.Wallets.FirstOrDefaultAsync(w => w.PhoneNumber == phoneNumber);
 
             if (wallets == null)
             {
