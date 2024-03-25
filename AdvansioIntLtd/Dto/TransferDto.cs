@@ -6,8 +6,10 @@ namespace AdvansioIntLtd.Dto
     {
         [Required]
         public string WalletNumber { get; set; } = string.Empty;
-        public decimal DebitAmount { get; set; }
-        public string Narration { get; set; } = string.Empty;
-        public int ActionId { get; set; }
+        public string AccountNumber { get; set; }
+        public string AccountName { get; set; }
+        public decimal Amount { get; set; }
+        public string Bank { get; set; }
+        public decimal Vat { get; set; }
     }
 }

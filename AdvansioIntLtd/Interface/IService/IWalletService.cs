@@ -9,7 +9,7 @@ namespace AdvansioIntLtd.Interface.IService
     {
         Task<WalletDto> CreateWallet(WalletDto walletDto);
         Task<decimal> GetWalletBalanceAsync();
-        Task<Decimal> TransferFundsAsync(TransferDto transferDto);
+        Task<decimal> TransferFundsAsync(TransferDto transferDto);
         Task<Wallet> GetWalletByNumber(string phone);
     }
 }

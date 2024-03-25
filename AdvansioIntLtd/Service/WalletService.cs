@@ -60,7 +60,7 @@ namespace AdvansioIntLtd.Service
         }
 
 
-        public async Task<Decimal> TransferFundsAsync(TransferDto transferDto)
+        public async Task<decimal> TransferFundsAsync(TransferDto transferDto)
         {
             try
             {
@@ -101,5 +101,7 @@ namespace AdvansioIntLtd.Service
          
             return wallets;
         }
+
+
     }
 }
