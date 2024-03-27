@@ -28,16 +28,23 @@ namespace AdvansioIntLtd.Service
                 {
                     PhoneNumber = walletDto.PhoneNumber,
                     UserId = walletDto.UserId,
-                   
                 };
                 wall.SetWalletID(walletDto.PhoneNumber);
                 wall.Currency = Currency.Naira;
-                wall.Balance = 5000;
+
+                // Set initial balance to 5000 only for new wallets
+                if (!_dbContext.Wallets.Any(w => w.UserId == walletDto.UserId))
+                {
+                    wall.Balance = 5000;
+                }
+                else
+                {
+                    wall.Balance = 0; 
+                }
 
                 await _dbContext.AddAsync(wall);
                 await _dbContext.SaveChangesAsync();
 
-                // var reponseDto = _mapper.Map<WalletResponseDto>(wallet);
                 var responseDto = new WalletDto
                 {
                     PhoneNumber = wall.PhoneNumber,
@@ -45,7 +52,6 @@ namespace AdvansioIntLtd.Service
                     Balance = wall.Balance,
                 };
                 return responseDto;
-
             }
             catch (Exception ex)
             {
@@ -53,14 +59,16 @@ namespace AdvansioIntLtd.Service
             }
         }
 
-        public async Task<decimal> GetWalletBalanceAsync()
+
+        public async Task<decimal> GetWalletBalanceAsync(string userId)
         {
-            var walletBalance = await _dbContext.Wallets.SumAsync(w => w.Balance);
-            return walletBalance;
+            var totalBalance = await _dbContext.Wallets.Where(w => w.UserId == userId).Select(w => w.Balance).FirstOrDefaultAsync();
+            return totalBalance;
         }
 
 
-      
+
+
 
     }
 }

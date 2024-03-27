@@ -67,7 +67,7 @@ namespace AdvansioIntLtd.Pages.RegisterPage
 
                     // Sign in the user and redirect to the Index page
                     await _signInManager.SignInAsync(user, false);
-                    return RedirectToPage("/Index");
+                    return RedirectToPage("/LoginPage/Login");
                 }
                 else
                 {

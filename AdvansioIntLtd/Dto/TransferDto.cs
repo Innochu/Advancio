@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdvansioIntLtd.Dto
 {
@@ -11,5 +12,7 @@ namespace AdvansioIntLtd.Dto
         public decimal Amount { get; set; }
         public string Bank { get; set; }
         public decimal Vat { get; set; }
+        [ForeignKey("AppUserId")]
+        public string UserId { get; set; } = string.Empty;
     }
 }

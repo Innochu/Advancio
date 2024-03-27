@@ -22,6 +22,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
+                        
+                       
                     </ul>
                 </div>
 
@@ -32,19 +34,20 @@
                     <li class="nav-item">
                         <a class="btn btn-outline-dark" id="Register" asp-area="Identity" asp-page="/RegisterPage/Register">Register</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-dark" id="DashBoard" asp-area="Identity" asp-page="/DashBoard/DashBoard">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-dark" id="FtTransfers" asp-area="FtTransfers" asp-page="/FtTransfers/FtTransfers">FtTransfer</a>
-                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark" id="DashBoard" asp-area="Identity" asp-page="/DashBoard/DashBoard">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark" id="FtTransfers" asp-area="FtTransfers" asp-page="/FtTransfers/FtTransfers">FtTransfer</a>
+                        </li>
+                    }
                 </ul>
 
 
-               
-
                    
-                </div>
+               
             </div>
         </nav>
     </header>

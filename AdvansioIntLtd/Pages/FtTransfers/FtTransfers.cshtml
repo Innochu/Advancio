@@ -6,54 +6,92 @@
     Layout = "~/Pages/Shared/_Layout.cshtml"; // Assuming you have a shared layout
 }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header bg-info text-white">Transfer Funds</div>
-                <div class="card-body">
-                    <form id="transferForm" method="post">
-                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
-                        <div class="mb-3">
-                            <label class="form-label">Wallet Number:</label>
-                            <input type="text" id="walletNumber" name="walletNumber" class="form-control" asp-for="Transfer.WalletNumber" required />
-                            <span class="text-danger" asp-validation-for="Transfer.WalletNumber"></span>
-                        </div>
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2" style="position: relative;">
+                <!-- Static sidebar image -->
+                <img src="~/images/sidebar.png" alt="Sidebar Image" class="img-fluid">
+                <!-- Float the image on the sidebar -->
+                <img src="~/images/Group 128.png" alt="Float Image" style="position: absolute; top: 30px; left: 25px; height: 40px;">
+            </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Account Number:</label>
-                            <input type="text" id="accountNumber" name="accountNumber" class="form-control" asp-for="Transfer.AccountNumber" required />
-                            <span class="text-danger" asp-validation-for="Transfer.AccountNumber"></span>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label class="form-label">Account Name:</label>
-                            <input type="text" id="accountName" name="accountName" class="form-control" asp-for="Transfer.AccountName" required />
-                            <span class="text-danger" asp-validation-for="Transfer.AccountName"></span>
-                        </div>
+            <!-- Main Content Area -->
+            <div class="col-md-10">
+                <!-- Image above the cards -->
+                <div class="d-flex justify-content-between mb-5" style="height:30px">
+                    <img src="~/images/header.png" alt="Image Above Cards" class="img-fluid">
+                    <img src="~/images/search.png" alt="Image Above Cards" class="img-fluid">
+                    <img src="~/images/notification 2.png" alt="Image Above Cards" class="img-fluid">
+                    <img src="~/images/Venty Loans.png" alt="Image Above Cards" style="height:20px" class="img-fluid">
+                    <img src="~/images/name.png" alt="Image Above Cards" class="img-fluid">
+                </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Amount:</label>
-                            <input type="text" id="amount" name="amount" class="form-control" asp-for="Transfer.Amount" required />
-                            <span class="text-danger" asp-validation-for="Transfer.Amount"></span>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label class="form-label">Bank:</label>
-                            <input type="text" id="bank" name="bank" class="form-control" asp-for="Transfer.Bank" required />
-                            <span class="text-danger" asp-validation-for="Transfer.Bank"></span>
-                        </div>
+                <!-- Centered Image -->
+                <div class="text-center mb-2">
+                    <img src="~/images/image (1).png" alt="Image" class="img-fluid">
+                </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Vat:</label>
-                            <input type="text" id="vat" name="vat" class="form-control" asp-for="Transfer.Vat" required />
-                            <span class="text-danger" asp-validation-for="Transfer.Vat"></span>
-                        </div>
+                <!-- Form -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header bg-danger text-white">Transfer Funds</div>
+                            <div class="card-body">
+                                <form id="transferForm" method="post">
+                                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
 
-                        <button type="submit" class="btn btn-info">Transfer Funds</button>
-                    </form>
+                                    <!-- First Row -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Wallet Number:</label>
+                                            <input type="text" id="walletNumber" name="walletNumber" class="form-control" asp-for="Transfer.WalletNumber" required />
+                                            <span class="text-danger" asp-validation-for="Transfer.WalletNumber"></span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Account Number:</label>
+                                            <input type="text" id="accountNumber" name="accountNumber" class="form-control" asp-for="Transfer.AccountNumber" required />
+                                            <span class="text-danger" asp-validation-for="Transfer.AccountNumber"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Second Row -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Account Name:</label>
+                                            <input type="text" id="accountName" name="accountName" class="form-control" asp-for="Transfer.AccountName" required />
+                                            <span class="text-danger" asp-validation-for="Transfer.AccountName"></span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Amount:</label>
+                                            <input type="text" id="amount" name="amount" class="form-control" asp-for="Transfer.Amount" required />
+                                            <span class="text-danger" asp-validation-for="Transfer.Amount"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Third Row -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Bank:</label>
+                                            <input type="text" id="bank" name="bank" class="form-control" asp-for="Transfer.Bank" required />
+                                            <span class="text-danger" asp-validation-for="Transfer.Bank"></span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Vat:</label>
+                                            <input type="text" id="vat" name="vat" class="form-control" asp-for="Transfer.Vat" required />
+                                            <span class="text-danger" asp-validation-for="Transfer.Vat"></span>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-info">Transfer Funds</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+}

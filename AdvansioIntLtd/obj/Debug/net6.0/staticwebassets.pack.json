@@ -125,6 +125,10 @@
       "PackagePath": "staticwebassets\\Images\\Group 128.png"
     },
     {
+      "Id": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\Group 526.png",
+      "PackagePath": "staticwebassets\\Images\\Group 526.png"
+    },
+    {
       "Id": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\Rectangle 274 (1).png",
       "PackagePath": "staticwebassets\\Images\\Rectangle 274 (1).png"
     },
@@ -153,12 +157,20 @@
       "PackagePath": "staticwebassets\\Images\\Venty Loans.png"
     },
     {
+      "Id": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\bg.png",
+      "PackagePath": "staticwebassets\\Images\\bg.png"
+    },
+    {
       "Id": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\follower.png",
       "PackagePath": "staticwebassets\\Images\\follower.png"
     },
     {
       "Id": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\header.png",
       "PackagePath": "staticwebassets\\Images\\header.png"
+    },
+    {
+      "Id": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\image (1).png",
+      "PackagePath": "staticwebassets\\Images\\image (1).png"
     },
     {
       "Id": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\name.png",

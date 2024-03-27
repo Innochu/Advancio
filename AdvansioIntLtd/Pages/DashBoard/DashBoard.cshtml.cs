@@ -1,9 +1,12 @@
 using AdvansioIntLtd.Interface.IService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Security.Claims;
 
 namespace AdvansioIntLtd.Pages.DashBoard
 {
+    [Authorize]
     public class DashBoardModel : PageModel
     {
         private readonly IWalletService _walletService;
@@ -16,10 +19,10 @@ namespace AdvansioIntLtd.Pages.DashBoard
         [BindProperty]
         public decimal Balance { get; set; }
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnGetAsync(string userId)
         {
-            // Fetch the wallet balance
-            Balance = await _walletService.GetWalletBalanceAsync();
+           
+            Balance = await _walletService.GetWalletBalanceAsync(userId);
             return Page();
         }
     }

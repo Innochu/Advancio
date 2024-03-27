@@ -8,7 +8,7 @@ namespace AdvansioIntLtd.Interface.IService
     public interface IWalletService
     {
         Task<WalletDto> CreateWallet(WalletDto walletDto);
-        Task<decimal> GetWalletBalanceAsync();
+        Task<decimal> GetWalletBalanceAsync(string userId);
        
         
     }

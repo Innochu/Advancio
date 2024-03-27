@@ -45,8 +45,11 @@ namespace AdvansioIntLtd.Pages.LoginPage
 
             if (result.Succeeded)
             {
-                // Authentication succeeded, redirect to the desired page.
-                return RedirectToPage("/Index");
+                // Get the user ID
+                var userId = user.Id;
+
+                // Pass the user ID to the dashboard page
+                return RedirectToPage("/Dashboard/Dashboard", new { userId = userId });
             }
             else
             {
@@ -54,5 +57,6 @@ namespace AdvansioIntLtd.Pages.LoginPage
                 return Page();
             }
         }
+
     }
 }

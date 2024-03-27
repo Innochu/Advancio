@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E6JUzeewSH7MhUK9e+s01H5r3kaSo4tD2nVT96RYEmE=",
+  "Hash": "vr3Rw4+HHEhgZCd10AP4TAF623xg1g+n1k5YYedp96w=",
   "Source": "AdvansioIntLtd",
   "BasePath": "_content/AdvansioIntLtd",
   "Mode": "Default",
@@ -1479,6 +1479,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\86%.png"
     },
     {
+      "Identity": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\bg.png",
+      "SourceId": "AdvansioIntLtd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\",
+      "BasePath": "_content/AdvansioIntLtd",
+      "RelativePath": "Images/bg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\bg.png"
+    },
+    {
       "Identity": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\Ellipse 207 (1).png",
       "SourceId": "AdvansioIntLtd",
       "SourceType": "Discovered",
@@ -1632,6 +1649,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\Group 128.png"
     },
     {
+      "Identity": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\Group 526.png",
+      "SourceId": "AdvansioIntLtd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\",
+      "BasePath": "_content/AdvansioIntLtd",
+      "RelativePath": "Images/Group 526.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Group 526.png"
+    },
+    {
       "Identity": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\header.png",
       "SourceId": "AdvansioIntLtd",
       "SourceType": "Discovered",
@@ -1647,6 +1681,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\header.png"
+    },
+    {
+      "Identity": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\image (1).png",
+      "SourceId": "AdvansioIntLtd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\",
+      "BasePath": "_content/AdvansioIntLtd",
+      "RelativePath": "Images/image (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\image (1).png"
     },
     {
       "Identity": "C:\\Users\\Decagon\\OneDrive\\Desktop\\Advancio\\AdvansioIntLtd\\wwwroot\\Images\\name.png",
